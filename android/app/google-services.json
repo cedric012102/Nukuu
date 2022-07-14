@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "461021615139",
+    "project_id": "nukuu-5ff84",
+    "storage_bucket": "nukuu-5ff84.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:461021615139:android:ea44274b4f8930a7a6cd96",
+        "android_client_info": {
+          "package_name": "com.nukuu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "461021615139-8glso9roguhfh96795s5qiet1re7vaod.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyABzbmoni5GXC5JAvUvp5nUEs5ILdNsQVE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "461021615139-8glso9roguhfh96795s5qiet1re7vaod.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "461021615139-mjjm58dcu40lst93f5am592jg9d09ed6.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.nukuu"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
