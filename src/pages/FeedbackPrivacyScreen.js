@@ -13,11 +13,11 @@ const FeedbackPrivacy = ({navigation}) => {
   };
 
   const termsOfUseRoute = () => {
-    Linking.openURL('https://cedric012102.wixsite.com/jordan23/terms');
+    Linking.openURL('https://cedric012102.wixsite.com/nukuu/terms');
   };
 
   const privacyStatementRoute = () => {
-    Linking.openURL('https://cedric012102.wixsite.com/jordan23/privacy-policy');
+    Linking.openURL('https://cedric012102.wixsite.com/nukuu/privacy-policy');
   };
 
   const list = [

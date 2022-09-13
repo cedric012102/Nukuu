@@ -1,9 +1,9 @@
 import React, {createContext, useState} from 'react';
 import auth from '@react-native-firebase/auth';
 import {GoogleSignin} from '@react-native-google-signin/google-signin';
-// import {
-//   appleAuth,
-// } from '@invertase/react-native-apple-authentication';
+import {
+  appleAuth,
+} from '@invertase/react-native-apple-authentication';
 import firestore from '@react-native-firebase/firestore';
 import {Alert} from 'react-native';
 import Auth, {firebase} from '@react-native-firebase/auth';

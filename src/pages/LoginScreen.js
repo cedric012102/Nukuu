@@ -15,10 +15,10 @@ import styles from './styles/LoginScreenStyle';
 import {AuthContext} from '../navigation/AuthProvider';
 import Video from 'react-native-video';
 
-// import {
-//   AppleButton,
-//   appleAuth,
-// } from '@invertase/react-native-apple-authentication';
+import {
+  AppleButton,
+  appleAuth,
+} from '@invertase/react-native-apple-authentication';
 
 const LoginScreen = ({navigation}) => {
   const [email, setEmail] = useState('');
@@ -93,7 +93,7 @@ const LoginScreen = ({navigation}) => {
             onPress={() => googleLogin()}
           />
 
-          {/* <AppleButton
+          <AppleButton
             buttonStyle={AppleButton.Style.WHITE}
             buttonType={AppleButton.Type.SIGN_IN}
             style={{
@@ -104,7 +104,7 @@ const LoginScreen = ({navigation}) => {
             onPress={() =>
               appleLogin()
             }
-          /> */}
+          />
 
           <TouchableOpacity
             style={styles.forgotButton}

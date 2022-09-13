@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@alessiocancian/react-native-actionsheet": "^3.1.2",
+    "@invertase/react-native-apple-authentication": "^2.2.2",
     "@react-native-async-storage/async-storage": "^1.16.1",
     "@react-native-clipboard/clipboard": "^1.8.5",
     "@react-native-firebase/app": "^14.5.1",
