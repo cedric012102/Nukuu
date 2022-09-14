@@ -20,6 +20,8 @@ import {
   appleAuth,
 } from '@invertase/react-native-apple-authentication';
 
+import {windowHeight, windowWidth} from '../utils/Dimensions';
+
 const LoginScreen = ({navigation}) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -97,9 +99,9 @@ const LoginScreen = ({navigation}) => {
             buttonStyle={AppleButton.Style.WHITE}
             buttonType={AppleButton.Type.SIGN_IN}
             style={{
-              width: 160,
-              height: 45,
-              marginTop: 15,
+              width: '100%',
+              height: windowHeight / 15,
+              marginTop: 10,
             }}
             onPress={() =>
               appleLogin()

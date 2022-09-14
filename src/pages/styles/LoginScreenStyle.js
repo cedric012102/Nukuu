@@ -16,7 +16,7 @@ const styles = StyleSheet.create({
   },
   text: {
     fontFamily: 'Kailasa',
-    fontSize: 40,
+    fontSize: 30,
     fontWeight: 'bold',
     color: '#fff',
   },
@@ -43,7 +43,7 @@ const styles = StyleSheet.create({
     width: '100%',
     height: windowHeight / 15,
     backgroundColor: 'rgba(9,4,1,0.5)',
-    padding: 10,
+    padding: 5,
     alignItems: 'center',
     justifyContent: 'center',
     borderRadius: 3,

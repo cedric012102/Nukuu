@@ -7,6 +7,8 @@ import {styles} from './styles/MoreOptionsOverlayStyle';
 import {ServiceButton} from './ServiceButton';
 import {useNavigation} from '@react-navigation/native';
 import {AuthContext} from '../navigation/AuthProvider';
+import Firestore from '@react-native-firebase/firestore';
+import Auth from '@react-native-firebase/auth';
 
 export function MoreOptionsOverlay({componentId}) {
   const navigation = useNavigation();
@@ -24,6 +26,37 @@ export function MoreOptionsOverlay({componentId}) {
     },
     {text: 'Logout', onPress: () => logout()},
   ]);
+
+  const deleteAccountAlert = () =>
+    Alert.alert(
+      'Delete Account',
+      'Are You Sure You Want To Delete Your Account?',
+      [
+        {
+          text: 'Cancel',
+          onPress: () => console.log('Cancel Pressed'),
+          style: 'cancel',
+        },
+        {text: 'Delete', onPress: () => deleteUser()},
+      ],
+    );
+
+  function deleteUser() {
+    // console.log('Current Post Id: ', user);
+
+    Firestore()
+      .collection('users')
+      .doc(Auth().currentUser.uid)
+
+      .delete()
+      .then(() => {
+        console.log('User deleted!');
+      })
+      .catch(e => {
+        console.log('Error while deleting the user. ', e);
+      });
+    logout();
+  }
 
   return (
     <AwesomeModal
@@ -44,6 +77,11 @@ export function MoreOptionsOverlay({componentId}) {
         image={require('../assets/images/Journey.jpeg')}
         label="Logout"
         onPress={logoutAlert}
+      />
+      <ServiceButton
+        image={require('../assets/images/Journey.jpeg')}
+        label="Delete Account"
+        onPress={deleteAccountAlert}
       />
 
       <ActionSheet
