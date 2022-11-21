@@ -28,7 +28,7 @@ Tts.setDefaultRate(0.5);
 Tts.setDefaultPitch(1.2);
 
 const QuoteScreen = ({navigation}) => {
-  const {user, logout} = useContext(AuthContext);
+  // const {user, logout} = useContext(AuthContext);
 
   const [Quote, setQuote] = useState('Loading...');
   const [Author, setAuthor] = useState('Loading...');
@@ -94,7 +94,7 @@ const QuoteScreen = ({navigation}) => {
               padding: 20,
             }}>
 
-              <View
+              {/* <View
               style={{flexDirection: 'row', justifyContent: 'space-around'}}>
               <TouchableOpacity
                 onPress={onFavoriteAdd}
@@ -106,7 +106,7 @@ const QuoteScreen = ({navigation}) => {
                 }}>
                 <FontAwesome name="heart" size={22} color="#5372F0" />
               </TouchableOpacity>
-              </View>
+              </View> */}
 
             <Text
               style={{
@@ -215,23 +215,23 @@ const QuoteScreen = ({navigation}) => {
     </LinearGradient>
   );
 
-  async function onFavoriteAdd() {
-    console.log(Quote);
-    let id = Quote;
-    try {
-      await Firestore().collection('favorites').doc(id).set({
-        // await Firestore().collection.users('favorites').doc(id).set({
-          quote: Quote,
-          author: Author,
-          id: id,
-          userId: Auth().currentUser.uid,
-      });
-      // navigation.navigate('Favorites');
-      Alert.alert('Quote added to Favorites!')
-    } catch (e) {
-      console.log(e);
-    }
-  }
+  // async function onFavoriteAdd() {
+  //   console.log(Quote);
+  //   let id = Quote;
+  //   try {
+  //     await Firestore().collection('favorites').doc(id).set({
+  //       // await Firestore().collection.users('favorites').doc(id).set({
+  //         quote: Quote,
+  //         author: Author,
+  //         id: id,
+  //         userId: Auth().currentUser.uid,
+  //     });
+  //     // navigation.navigate('Favorites');
+  //     Alert.alert('Quote added to Favorites!')
+  //   } catch (e) {
+  //     console.log(e);
+  //   }
+  // }
 
 //   function sameQuoteError() {
 //     if (user === Quote) {
