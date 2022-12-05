@@ -9,7 +9,7 @@ import {
   Alert,
   Linking
 } from 'react-native';
-import Auth from '@react-native-firebase/auth';
+// import Auth from '@react-native-firebase/auth';
 import {
   GoogleSignin,
   statusCodes,

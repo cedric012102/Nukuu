@@ -7,8 +7,8 @@ import {styles} from './styles/MoreOptionsOverlayStyle';
 import {ServiceButton} from './ServiceButton';
 import {useNavigation} from '@react-navigation/native';
 import {AuthContext} from '../navigation/AuthProvider';
-import Firestore from '@react-native-firebase/firestore';
-import Auth from '@react-native-firebase/auth';
+// import Firestore from '@react-native-firebase/firestore';
+// import Auth from '@react-native-firebase/auth';
 
 export function MoreOptionsOverlay({componentId}) {
   const navigation = useNavigation();

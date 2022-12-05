@@ -17,8 +17,8 @@ import Clipboard from '@react-native-clipboard/clipboard';
 import Snackbar from 'react-native-snackbar';
 import LinearGradient from 'react-native-linear-gradient';
 
-import Auth from '@react-native-firebase/auth';
-import Firestore from '@react-native-firebase/firestore';
+// import Auth from '@react-native-firebase/auth';
+// import Firestore from '@react-native-firebase/firestore';
 
 import { AuthContext } from '../navigation/AuthProvider';
 

@@ -8,7 +8,7 @@ import {
 } from 'react-native';
 import FormButton from '../components/FormButton';
 import styles from './styles/ForgotPasswordScreenStyle';
-import Auth, {firebase} from '@react-native-firebase/auth';
+// import Auth, {firebase} from '@react-native-firebase/auth';
 
 // import {AuthContext} from '../navigation/AuthProvider';
 

@@ -7,7 +7,7 @@ import {
   Alert,
   TouchableWithoutFeedback,
 } from 'react-native';
-import Auth, {firebase} from '@react-native-firebase/auth';
+// import Auth, {firebase} from '@react-native-firebase/auth';
 import FormInput from '../components/FormInput';
 import FormButton from '../components/FormButton';
 import SocialButton from '../components/SocialButton';

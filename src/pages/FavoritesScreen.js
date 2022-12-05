@@ -1,8 +1,8 @@
 import React, {useState, useEffect} from 'react';
 import {Text, View, FlatList, TouchableOpacity, Alert} from 'react-native';
 import styles from './styles/FavoritesScreenStyle';
-import firestore from '@react-native-firebase/firestore';
-import Auth from '@react-native-firebase/auth';
+// import firestore from '@react-native-firebase/firestore';
+// import Auth from '@react-native-firebase/auth';
 import LinearGradient from 'react-native-linear-gradient';
 
 const FavoritesScreen = ({item, navigation}) => {
